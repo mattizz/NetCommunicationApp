@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="511dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/buttonDownloadInformation"
+            android:layout_alignTop="@+id/editTextAddress"
+            android:text="Adres" />
+
+        <Button
+            android:id="@+id/buttonDownloadInformation"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="132dp"
+            android:text="Pobierz informacje" />
+
+        <TextView
+            android:id="@+id/textViewFileSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textViewAddress"
+            android:layout_marginTop="188dp"
+            android:text="Rozmiar pliku" />
+
+        <TextView
+            android:id="@+id/textViewFileSizeValue"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextAddress"
+            android:layout_alignTop="@+id/textViewFileSize" />
+
+        <TextView
+            android:id="@+id/textViewFileType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textViewAddress"
+            android:layout_marginTop="228dp"
+            android:text="Typ pliku" />
+
+        <TextView
+            android:id="@+id/textViewFileTypeValue"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextAddress"
+            android:layout_alignTop="@+id/textViewFileType" />
+
+        <Button
+            android:id="@+id/buttonDownloadFile"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="207dp"
+            android:text="Pobierz plik" />
+
+        <TextView
+            android:id="@+id/textViewFileDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textViewAddress"
+            android:layout_marginBottom="175dp"
+            android:text="Pobrano bajtów" />
+
+        <TextView
+            android:id="@+id/textViewFileDownloadValue"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editTextAddress"
+            android:layout_alignTop="@+id/textViewFileDownload" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="134dp" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="77dp"
+            android:layout_alignEnd="@+id/buttonDownloadInformation"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="44dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="http://ipv6.download.thinkbroadband.com/5MB.zip" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
